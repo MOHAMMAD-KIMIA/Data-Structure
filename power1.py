@@ -4,7 +4,3 @@ def power(n,m):
     else:
         return n*power(n,m-1)
 
-
-a=int(input("number:"))
-b=int(input(f"power:"))
-print(pow(a,b))
