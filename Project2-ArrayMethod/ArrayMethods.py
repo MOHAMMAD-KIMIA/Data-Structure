@@ -14,6 +14,13 @@ def delete_element(arr, n, x):
             break
         i += 1
 
+    if i < n:
+        n -= 1
+        for j in range(i, n):
+            arr[j] = arr[j+1]
+    
+    return n
+
 def insertX(n, arr, x, pos):
 
     newarr = [0] * (n + 1)
