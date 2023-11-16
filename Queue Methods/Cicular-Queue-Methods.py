@@ -48,14 +48,3 @@ class CircularQueue:
             A[start], A[end] = A[end], A[start] 
             start += 1
             end -= 1
-            
-            
-ob = CircularQueue(5)
-ob.enQueue(14)
-ob.enQueue(22)
-ob.enQueue(13)
-ob.enQueue(-6)
-ob.enQueue(69)
-print(ob.queue)
-ob.deQueue()
-print(ob.queue)
