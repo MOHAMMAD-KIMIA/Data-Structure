@@ -32,8 +32,7 @@ class CircularQueue:
     
     def deQueue(self): # remove from queue
         if self.isempty()==True:
-            print("The queue is empty!")
-            return
+            return False
         else:
             temp = self.queue[self.front]
             self.queue[self.front] = None
