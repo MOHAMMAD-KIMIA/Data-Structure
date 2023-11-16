@@ -40,24 +40,3 @@ class LQueue:
 			A[start], A[end] = A[end], A[start] 
 			start += 1
 			end -= 1
-
-
-if __name__ == '__main__':
-	q = LQueue(4)
- 
-    # Print queue elements
-	q.queueEnqueue(20)
-	q.queueEnqueue(30)
-	q.queueEnqueue(10)
-	q.queueEnqueue(30)
-	q.queueEnqueue(30)
-	# q.queueEnqueue(30)
-	# q.reverseQueue()
-	print("\n")
-	a=q.queueisempty()
-	b=q.queueisfull()
-	#q.queuedequeue()
-	print(q.queue)
-	print(bool(a))
-	print(bool(b))
-	
