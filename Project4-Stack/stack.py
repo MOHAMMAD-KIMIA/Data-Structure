@@ -14,7 +14,6 @@ class Stack:
         
     def push(self,x):
         if (self.isfull()):
-            print("stack is full")
             return False
         else:
             self.top=self.top + 1
@@ -22,7 +21,6 @@ class Stack:
 
     def pop(self):
         if(self.isempty()):
-            print("stack is empty")
             return False
         else:
             temp=self.stack[self.top]
@@ -32,5 +30,3 @@ class Stack:
 
     def peek(self):
         return self.stack[self.top]
-    
- 
