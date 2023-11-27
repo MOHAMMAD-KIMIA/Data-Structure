@@ -1,0 +1,36 @@
+class Stack:
+    def __init__(self,c):
+        self.stack = [None for i in range(c)]
+        self.top = -1
+        self.capacity = c
+
+    def isempty(self):
+        if self.top == 0:
+            return True
+        
+    def isfull(self):
+        if self.top==self.capacity:
+            return True
+        
+    def push(self,x):
+        if (self.isfull()):
+            print("stack is full")
+            return False
+        else:
+            self.top=self.top + 1
+            self.stack[self.top] = x
+
+    def pop(self):
+        if(self.isempty()):
+            print("stack is empty")
+            return False
+        else:
+            temp=self.stack[self.top]
+            self.stack[self.top] = None
+            self.top=self.top - 1
+            return temp
+
+    def peek(self):
+        return self.stack[self.top]
+    
+ 
