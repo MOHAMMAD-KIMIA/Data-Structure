@@ -21,12 +21,12 @@ class LQueue:
 
 	def queuedequeue(self):
 		if(self.queueisempty()):
-			print("bordanesh zendan")
 			return False
 		else:
 			temp=self.queue[self.front]
 			self.queue[self.front]=None
-			self.front=(self.front+1) % self.capacity
+			#self.front=(self.front+1) % self.capacity
+			self.front=self.front+1
 			return temp
 	
 	def queuepeek(self):
@@ -40,3 +40,4 @@ class LQueue:
 			A[start], A[end] = A[end], A[start] 
 			start += 1
 			end -= 1
+			
