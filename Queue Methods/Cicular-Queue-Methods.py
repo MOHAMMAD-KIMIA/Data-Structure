@@ -10,7 +10,7 @@ class CircularQueue:
             return True
         
     def isfull(self):
-        if ((self.front == 0 and self.rear == -1) or ((self.rear+1) % self.size == self.front )):
+        if ((self.rear+1) % self.size == self.front ):
             return True
 
     def peekQueue(self):
