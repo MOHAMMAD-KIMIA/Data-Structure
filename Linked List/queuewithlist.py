@@ -7,7 +7,7 @@ class Queue:
         self.queue.insertAtend(data)
             
     def dequeue(self):
-        return self.queue.deleteFromlast()
+        return self.queue.deleteFromfirst()
         
     def peek(self):
         return self.queue.head.data
